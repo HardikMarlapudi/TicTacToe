@@ -60,7 +60,7 @@ function playersMove() {
                 cell.textContent = 'X';
                 currentPlayer = 'O';
                 checkWinner();
-                if (gameActive) setTimeout(computerMove, 500);
+                if (gameActive) setTimeout(computerMove, 600);
             }
         });
     }
