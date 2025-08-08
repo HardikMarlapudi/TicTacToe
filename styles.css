@@ -1,0 +1,54 @@
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 180px auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+td:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+
+tr:nth-child(2) td {
+    border-top: none;
+    border-bottom: none;
+}
+
+#score {
+    text-align: center;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#playerScore {
+    text-align: center;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#computerScore {
+    text-align: center;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scoreBoard {
+    border: solid;
+    border-radius: 1px solid;
+    padding: 10px 20px;
+}

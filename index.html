@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+    
+    <h1>Tic Tac Toe</h1>
+    <table>
+        <tr>
+            <td id="cell-1"></td>
+            <td id="cell-2"></td>
+            <td id="cell-3"></td>
+        </tr>
+
+        <tr>
+            <td id="cell-4"></td>
+            <td id="cell-5"></td>
+            <td id="cell-6"></td>
+        </tr>
+
+        <tr>
+            <td id="cell-7"></td>
+            <td id="cell-8"></td>
+            <td id="cell-9"></td>
+        </tr>
+    </table>
+
+    <div class="scoreBoard">
+
+        <p id="score">ScoreBoard: </p>
+
+        <div id="playerScore">Player (X): </div>
+        <br>
+        <div id="computerScore">Computer Score (O): </div>
+
+    </div>
+
+    <div class="icons">
+        <div id="playerIcon" onclick="playerMove()"></div>
+        <div id="computerIcon" onclick="computerMove()"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
