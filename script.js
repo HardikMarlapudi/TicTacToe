@@ -51,7 +51,7 @@ function checkWinner() {
     }
 }
 
-function playerMove() {
+function playersMove() {
     if (!gameActive) return;
 
     for (let cell of cells) {
@@ -79,4 +79,4 @@ function computerMove() {
 }
 
 // Initialize player move listeners
-playerMove();
+playersMove();
