@@ -1,7 +1,6 @@
 let playerScore = 0;
 let computerScore = 0;
 let currentPlayer = 'X';
-let computer = '0';
 let gameActive = true;
 
 const cells = Array.from({ length: 9 }, (_, i) =>
@@ -10,17 +9,17 @@ const cells = Array.from({ length: 9 }, (_, i) =>
 
 function resetBoard() {
     cells.forEach(cell => cell.textContent = '');
-    gameActive = true;
     currentPlayer = 'X';
+    gameActive = true;
 }
 
 function updateScore(winner) {
-    if (winner === 'X') {
+    if(winner === 'X') {
         playerScore++;
-        document.getElementById("playerScore").textContent = `Player (X): ${playerScore}`;
+        document.getElementById('playerScore').textContent = `Player (X): ${playerScore} `;
     } else if (winner === 'O') {
         computerScore++;
-        document.getElementById("computerScore").textContent = `Computer Score (O): ${computerScore}`;
+        document.getElementById('computerScore').textContent = `Computer Score (O): ${computerScore}`;
     }
 }
 
@@ -60,7 +59,7 @@ function playersMove() {
                 cell.textContent = 'X';
                 currentPlayer = 'O';
                 checkWinner();
-                if (gameActive) setTimeout(computerMove, 600);
+                if (gameActive) setTimeout(computerMove, 1000);
             }
         });
     }

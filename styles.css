@@ -1,3 +1,7 @@
+* {
+    background-color: rgb(152, 190, 223);
+}
+
 h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
@@ -23,7 +27,7 @@ td:nth-child(2) {
     border-right: none;
 }
 
-tr:nth-child(2) td {
+tr:nth-child(2) {
     border-top: none;
     border-bottom: none;
 }
@@ -48,7 +52,7 @@ tr:nth-child(2) td {
 }
 
 .scoreBoard {
-    border: solid;
-    border-radius: 1px solid;
+    border: 1rem solid;
+    border-radius: 1rem;
     padding: 10px 20px;
 }
